@@ -1,6 +1,7 @@
-cleanedcontent =""
+
 count = 0
-with open("plain.txt", "r") as file:
+with open("plain.txt", "r") as file, open('cleanedlist.txt', 'w') as output:
+    
     
     for num, line in  enumerate(file, start=1):
             content = [clean.strip() for clean in line.split(",")]
@@ -17,9 +18,9 @@ with open("plain.txt", "r") as file:
                  print("age has incorrect input for user "+name+" in line "+str(num))
                  continue
             count +=1
-            cleanedcontent += (f"{name}, {age}, {email}"+'\n')
-with open('cleanedlist.txt', 'w') as output:
-    output.write(cleanedcontent)
+            output.write(f"{name}, {age}, {email}"+'\n')
+
+    
 print(f"{count} details is cleaned and stored in cleaned.txt file")
         
             

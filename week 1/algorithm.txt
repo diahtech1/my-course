@@ -1,0 +1,28 @@
+Weekend Project Milestone: The Text File Filter. 
+Create an algorithm that reads a messy list of 
+users from a plain .txt file, filters out users
+ below a certain age, and saves the clean 
+ results into a brand new text file.
+
+
+James, 35, james@email.com
+  Mary, 15, mary@email.com
+josiah, 27, josiah@email.com
+Sarah,17 , sarah@email.com
+  Michael,  42, michael@email.comynta
+David, 12, david@email.com
+
+ algorithm:
+open plain.txt file
+take it line by line
+seperate to stirng wherever ther is a comma
+trim out space
+create list of users
+for each users there will be name, age, email values
+second column is the age
+if the age is below 18 
+skip the user
+else
+first column is name, last column is the email 
+save the user into adult variable list
+save the adult vaible list into a cleanedlist.txt file 

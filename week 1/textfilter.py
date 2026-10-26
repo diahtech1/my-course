@@ -15,12 +15,11 @@ with open("plain.txt", "r") as file:
                     continue
             except ValueError:
                  print("age has incorrect input for user "+name+" in line "+str(num))
-                 if ValueError:
-                      continue
+                 continue
             count +=1
             cleanedcontent += (f"{name}, {age}, {email}"+'\n')
-            with open('cleanedlist.txt', 'w') as output:
-                output.write(cleanedcontent)
+with open('cleanedlist.txt', 'w') as output:
+    output.write(cleanedcontent)
 print(f"{count} details is cleaned and stored in cleaned.txt file")
         
             

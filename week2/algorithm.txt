@@ -1,0 +1,9 @@
+input is name and birthyear
+thisyear = number with value 2026
+name = string
+
+if name does not exist diaplay a massege to input name 
+if birthyear is greater than 2026 display "birthyear cannot be greater than 2026" meassage
+userage = thisyear - birthyear
+greeting massege = "welcome 'name', your are 'userage' years old"
+print or return greeting massege
